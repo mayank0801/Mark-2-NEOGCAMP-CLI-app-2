@@ -8,7 +8,7 @@ var Score = 0;
 const helper = function (question, answer) {
   var userAns = readLineSync.question(question);
 
-  if (userAns === answer) {
+  if (userAns.toLowerCase() === answer.toLowerCase()) {
     console.log("Right!!");
     Score++;
   } else {
@@ -19,23 +19,23 @@ const helper = function (question, answer) {
 var questions = [
   {
     Question: "who is current captain of Indian cricket team? ",
-    Answer: "Rohit sharma",
+    Answer: "rohit sharma",
   },
   {
     Question: "Who led the indian team to 2011 world cup victory? ",
-    Answer: "Dhoni",
+    Answer: "dhoni",
   },
   {
     Question: "Who is India's most run scorer in ODIs? ",
-    Answer: "Sachin",
+    Answer: "sachin",
   },
   {
     Question: "Who has hit 6 sixes in an over of T20I? ",
-    Answer: "Yuvraj singh",
+    Answer: "yuvraj singh",
   },
   {
     Question: "Who is the leading run scorer in T20Is for india ?",
-    Answer: "Virat kohli",
+    Answer: "virat kohli",
   },
 ];
 
